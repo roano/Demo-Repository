@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+    class Program
+    {
+    
+        static string[] TextToPrint = 
+        {
+           "ABC", //0
+           "DEF",
+           "GHI",
+           "JKL",
+           "MNO",
+           "PQR",
+           "STU",
+           "VWX",
+           "YZ" //8
+           };
+           //^^^ is what TextToPrint has. You also can replace the words with numbers, but here is an simpler function for that.
+           
+        static void Main(string[] args)
+        
+        {
+        Random r = new Random();
+        /* ^^ this creates a new random number generator*/
+        
+        
+        int PickedText = r.Next(TextToPrint.Length);
+        //PickedText makes the TextToPrint goes through the randomnumber generator. Once the RandomNo Generator picks the element inside the TextToPrint, it converts to which order the element is in, then afterwards PickedText becomes the number of that order.
+        
+        //alternatively, since there are 8 elements inside TextToPrint, you can put the number'8' inside the bracket too!
+        
+        Console.WriteLine(TextToPrint[PickedText]);
+        }
+    }
+}
