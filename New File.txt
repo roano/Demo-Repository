@@ -1,0 +1,9 @@
+<h1>List</h1>
+<ul>
+	<li>hotdog</li>
+	<li>eggs</li>
+	<li>bacon</li>
+	<li>chicken</li>
+	<li>rice</li>
+	<li>Ketchup</li>
+</ul>
